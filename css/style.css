@@ -1,0 +1,231 @@
+/* Start Global */
+	*{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+
+	}
+	h2{font-weight: normal;}
+	body{height: 2000px;
+	}
+	.container{
+		width: 1300px;
+		margin: auto;
+	}
+/* End Global */
+/* Start nav bar */
+	.navbar{
+		font-weight: bold;
+		font-size: 20px;
+		height: 0px;
+		color: #FFF;
+		z-index:2;
+		position: relative;
+
+	}
+	.navbar .brand{
+		float: left;
+		width: 50%;
+		text-transform: uppercase;
+	}
+	.navbar .links{
+		float: left;
+		width:50%;
+		list-style: none; 
+	}
+
+	.navbar li {
+		display: inline-block;
+		margin: 0px 10px;
+		padding: 10px 0px;
+		border-bottom: 2px solid transparent 
+	}
+	.navbar li a{
+		color: #FFF;
+		text-decoration: none;
+	}
+	.navbar .links li.active a,
+	.navbar .links li a:hover
+	{
+		color: #20AA8E;
+		border-bottom: 2px solid #20AA8E;
+		cursor: pointer;
+	}
+
+/* End nav bar */
+/* Start Header */
+	.header{
+		background:url('../images/header2.jpg');
+		position: relative;
+	
+	}
+	.header .overlay{
+		background-color: rgba(0,0,0,0.6);
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		left: 0px;
+		color: #FFF;
+		height: 100%;
+		width: 100%;  
+		z-index:1;
+
+	}
+	.header .bx-wrapper {
+		height: 100%;
+		background:none;
+		border: none;
+		text-align: center;
+	}
+	.header .bx-wrapper .bx-viewport{
+		box-shadow: none;
+		height: 100% !important
+	}
+	.header h2{
+	    font-size: 90px;
+	    margin-bottom: 20px;
+	    margin-top: 0;
+	    font-weight: bold;
+	}
+	.header span{
+		color: #20AA8E;
+	
+	}
+/* End Header */
+/* Start Services */
+	.services{
+		padding: 40px;
+		position: relative;
+		margin-bottom: 20px;
+	}
+	.services .item{
+		float: left;
+		width: 33.3333%;
+		margin-bottom: 10px;
+	}
+	.services .item i{
+		color: #1abc9c;
+	    float: left;
+	    width: 17%;
+	    margin-top: 15px;
+	    margin-right: 8%;
+	}
+	.services .item .info{
+		float: left;
+		width: 70%;
+	}
+	.services .item .info h2{
+		margin-bottom: 10px;
+		color: #585353
+	}
+	.services .item .info p{
+		margin-top:0px;
+		color: #888
+	}
+/* End Services */
+/* start our team */
+	.our-team{padding-top: 30px;}
+	.our-team .info{
+		float: left;
+		width: 40%;
+	}
+	.our-team .info p{
+		margin-top: 30px;
+		color: #888; 
+	}
+
+	.our-team .images{
+		width: 60%;
+		float: left;
+		text-align: right;
+	}
+	.our-team .images .box{
+		width: 23%;
+		margin-left: 10px;
+		float: left;
+		position:relative;
+	}
+	.our-team .images .box img{
+		width: 100%;
+		height: 100%;
+	}
+	.our-team .images .overlay{
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    width: 100%;
+	    height: 100%;
+	    line-height: 183px;
+	    font-size: 20px;
+	    font-weight: bold;
+	    color: #FFF;
+	    text-align: center;
+	    background-color: rgba(26, 188, 156, .9);
+	    display: none;
+	    cursor: pointer;
+	}
+	.our-team .images .box:hover .overlay{
+		display: block
+	}
+	
+/* end our team */
+/* start testimonials */
+	.testi{
+		padding-top: 40px;
+		margin:80px  0px;
+		text-align: center;
+		background-image: url('../images/testi.jpg');
+		background-size: cover;
+		width: 100%;
+		height: 500px;
+		color: #FFF;
+		position: relative;
+	}
+	.testi .overlay{
+		position: absolute;
+	    left: 0;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    width: 100%;
+	    height: 100%;
+	    background-color: rgba(0, 0, 0, .8);
+	}
+	.testi .slider div{
+		display: none;
+	}
+	.testi .slider .active{display: block;}
+	.testi h2{    
+		font-size: 40px;
+    	margin: 80px 0 10px;
+    }
+    .testi q{
+		font-size: 25px;
+	    line-height: 2;
+	    color: #D0D0D0;
+	    display: block;
+	    margin-top: 60px;
+    }
+    .testi p{
+   		font-size: 30px;
+   		color: #1abc9c;
+    }
+/* end testimonials */
+
+/* Start FrameWork */
+	.clearfix{
+		clear: both;
+	}
+	.special-heading{position: relative;}
+	.special-heading:after{
+		content: "";
+	    top: 40px;
+	    left: 0;
+	    width: 40px;
+	    position: absolute;
+	    display: block;
+	    border-bottom: 2px solid #333;
+	}
+/* End FrameWork */
